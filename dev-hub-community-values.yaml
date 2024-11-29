@@ -188,7 +188,6 @@ upstream:
       - configMapRef: app-config-devhub
         filename: app-config-devhub.yaml
         
-    dynamicPluginsConfigMapName: dynamic-plugins-devhub
     # -------------------------------------------------------
     #begin - Valores customizados  
     # -------------------------------------------------------   
