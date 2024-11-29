@@ -226,11 +226,11 @@ upstream:
       #   value: 'U7myfeuSBDfifxJa'
       - name: NODE_TLS_REJECT_UNAUTHORIZED
         value: '0'
-      - name: OPENSHIFT_TOKEN
-        valueFrom:
-          secretKeyRef:
-            key: token
-            name: backstage-sa
+      # - name: OPENSHIFT_TOKEN
+      #   valueFrom:
+      #     secretKeyRef:
+      #       key: token
+      #       name: backstage-sa
       # - name: NODE_EXTRA_CA_CERTS
       #   valueFrom:
       #     secretKeyRef:
