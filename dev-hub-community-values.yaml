@@ -185,8 +185,8 @@ upstream:
     extraEnvVarsSecrets:
       - app-secrets-devhub
     extraAppConfig:
-      - configMapRef: app-config-devhub
-        filename: app-config-devhub.yaml
+      - configMapRef: app-config-extra
+        filename: app-config-extra.yaml
         
     #dynamicPluginsConfigMapName: dynamic-plugins-devhub
     # -------------------------------------------------------
