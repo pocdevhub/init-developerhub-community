@@ -75,10 +75,10 @@ global:
       #   disabled: false
       # - package: ./dynamic-plugins/dist/roadiehq-backstage-plugin-argo-cd
       #   disabled: false
-      # - package: ./dynamic-plugins/dist/backstage-community-plugin-ocm
-      #   disabled: true
-      # - package: ./dynamic-plugins/dist/backstage-community-plugin-ocm-backend-dynamic
-      #   disabled: true
+      - package: ./dynamic-plugins/dist/backstage-community-plugin-ocm
+        disabled: true
+      - package: ./dynamic-plugins/dist/backstage-community-plugin-ocm-backend-dynamic
+        disabled: true
       # - package: ./dynamic-plugins/dist/roadiehq-scaffolder-backend-module-utils-dynamic
       # disabled: false
     # -------------------------------------------------------
@@ -88,7 +88,7 @@ global:
   # -- Shorthand for users who do not want to specify a custom HOSTNAME. Used ONLY with the DEFAULT upstream.backstage.appConfig value and with OCP Route enabled.
   clusterRouterBase: "apps.k8s.dev.local"
   # -- Custom hostname shorthand, overrides `global.clusterRouterBase`, `upstream.ingress.host`, `route.host`, and url values in `upstream.backstage.appConfig`.
-  host: ""
+  host: "backstage.apps.k8s.dev.local"
   # -- Enable service authentication within Backstage instance
   auth:
     # -- Backend service to service authentication
